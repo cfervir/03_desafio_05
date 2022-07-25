@@ -15,6 +15,10 @@
     &__item {
       height: 40px;
 
+      &--checked {
+        background: #f9f9f9;
+      }
+
       &--02 {
         text-align: left;
 

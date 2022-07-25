@@ -162,6 +162,9 @@ select {
 .table--body__item {
   height: 40px;
 }
+.table--body__item--checked {
+  background: #f9f9f9;
+}
 .table--body__item--02 {
   text-align: left;
 }

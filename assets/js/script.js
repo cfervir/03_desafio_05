@@ -36,16 +36,16 @@ let tareas = (arrayTareas) => {
   for (let laTarea of arrayTareas) {
     contenidoTarea += `
       <tr class="table--body__row">
-        <td class="table--body__item" ${laTarea.lista ? 'style="background: #f9f9f9"' : ''}>
+        <td class="table--body__item ${laTarea.lista ? 'table--body__item--checked' : ''}">
           ${laTarea.id}
         </td>
-        <td class="table--body__item table--body__item--02" ${laTarea.lista ? 'style="background: #f9f9f9"' : ''}>
+        <td class="table--body__item table--body__item--02 ${laTarea.lista ? 'table--body__item--checked' : ''}">
           ${laTarea.contenido}
         </td>
-        <td class="table--body__item" ${laTarea.lista ? 'style="background: #f9f9f9"' : ''}>
+        <td class="table--body__item ${laTarea.lista ? 'table--body__item--checked' : ''}">
           <input type="checkbox" class="input--realizado" onclick="cambiarTick(${laTarea.id});" ${laTarea.lista ? 'checked disabled' : ''}>
         </td>
-        <td class="table--body__item" ${laTarea.lista ? 'style="background: #f9f9f9"' : ''}>
+        <td class="table--body__item ${laTarea.lista ? 'table--body__item--checked' : ''}">
           <button type="submit" class="btn btn--borrar" onclick="borrarTarea(${laTarea.id});">X</button>
         </td>
       </tr>
