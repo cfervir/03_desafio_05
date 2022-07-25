@@ -7,7 +7,7 @@ let id = 1;
 
 const envioDeTarea = () => {
   let nuevaTarea = document.querySelector('#nuevaTarea').value;
-  
+
   if (nuevaTarea == '') {
     alert('¡Debes ingresar una tarea!');
   } else {
@@ -19,6 +19,8 @@ const envioDeTarea = () => {
     
     tareasIngresadas.push(cuerpoTarea);
     tareas(tareasIngresadas);
+    document.querySelector('#nuevaTarea').value = '';
+    document.querySelector('#nuevaTarea').placeholder = 'Ingresa otra tarea más...';
   };
 };
 
