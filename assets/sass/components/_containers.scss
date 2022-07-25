@@ -1,0 +1,43 @@
+.container {
+  max-width: calc(300px * 3 + 5em);
+  margin: 0 1em;
+  text-align: center;
+
+  @media (min-width: 1000px) {
+    margin: 0 auto;
+  }
+
+  &--flex {
+    display: flex;
+  }
+
+  &--elements {
+    padding-top: 1em;
+    flex-direction: column;
+
+    @media (min-width: 600px) {
+      flex-direction: row;
+    }
+  }
+
+  &--data {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 1em;
+
+    @media (min-width: 600px) {
+      text-align: left;
+      width: 20%;
+      padding-bottom: 0;
+    }
+  }
+
+  &--list {
+    align-items: center;
+    width: 100%;
+
+    @media (min-width: 600px) {
+      width: 80%;
+    }
+  }
+}

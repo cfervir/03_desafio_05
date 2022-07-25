@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap");
+/* Taken from https://piccalil.li/blog/a-modern-css-reset/. Added font on body and some slight changes! */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.4;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: calc(900px + 5em);
+  margin: 0 1em;
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+.container--flex {
+  display: flex;
+}
+.container--elements {
+  padding-top: 1em;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .container--elements {
+    flex-direction: row;
+  }
+}
+.container--data {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 1em;
+}
+@media (min-width: 600px) {
+  .container--data {
+    text-align: left;
+    width: 20%;
+    padding-bottom: 0;
+  }
+}
+.container--list {
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .container--list {
+    width: 80%;
+  }
+}
+
+.btn {
+  border: none;
+  outline: none !important;
+  font-weight: 700;
+  cursor: pointer;
+  color: #ffffff;
+}
+.btn--agregar {
+  width: 120px;
+  height: 35px;
+  padding: 0 1em;
+  border-radius: 0.25em;
+  background-color: rgb(0, 191, 25);
+}
+.btn--agregar:hover, .btn--agregar:focus {
+  transition: background-color 0.15s ease-in;
+  background-color: rgb(0, 105, 14);
+}
+.btn--borrar {
+  border-radius: 0.25em;
+  padding: 0 0.8em;
+  height: 30px;
+  font-size: 0.75rem;
+  background-color: rgb(191, 0, 0);
+}
+.btn--borrar:hover, .btn--borrar:focus {
+  transition: background-color 0.15s ease-in;
+  background-color: rgb(90, 0, 0);
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 2px solid rgb(123, 123, 123);
+}
+.table--head {
+  border-bottom: 2px solid rgb(123, 123, 123);
+  height: 45px;
+  background-color: #e0e0e0;
+  font-weight: 700;
+}
+.table--body__item {
+  height: 40px;
+}
+.table--body__item--02 {
+  text-align: left;
+}
+@media (min-width: 400px) {
+  .table--body__item--02 {
+    text-align: center;
+  }
+}
+.table--body__row + .table--body__row {
+  border-top: 1px solid rgb(212, 212, 212);
+}
+.table--01 {
+  width: 70px;
+}
+.table--02--inside {
+  text-align: left;
+}
+.table--03 {
+  width: 60px;
+}
+.table--04 {
+  width: 38px;
+}
+
+.input--tarea {
+  height: 34px;
+  border: 1px solid;
+  border-radius: 0.25em;
+  width: 50%;
+  min-width: 250px;
+  margin-bottom: 0.5em;
+  padding: 0 0.4em;
+}
+@media (min-width: 415px) {
+  .input--tarea {
+    margin-right: 0.5em;
+    margin-bottom: 0;
+  }
+}
+
+main h3 {
+  padding-bottom: 0.25em;
+}
+
+/*# sourceMappingURL=styles.css.map */

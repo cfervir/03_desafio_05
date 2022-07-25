@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio 05 - Javascript para la Web</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/e190a6dfc5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>To-do List</h1>
+      <hr>
+    </header>
+
+    <main>
+      <h3>Nueva Tarea</h3>
+      <input id="nuevaTarea" type="text" placeholder="olakase" class="input--tarea">
+      <button id="enviarTarea" type="submit" class="btn btn--agregar">Agregar</button>
+      <div class="container--flex container--elements">
+        <div class="container--data">
+          <p>Total: <strong id="totalTareas">0</strong></p>
+          <p>Realizadas: <strong id="totalListas">0</strong></p>
+        </div>
+        <div class="container--flex container--list">
+          <table class="table">
+            <thead class="table--head">
+              <tr>
+                <td class="table--01">
+                  ID
+                </td>
+                <td class="table--02">
+                  Tarea
+                </td>
+                <td class="table--03">
+                </td>
+                <td class="table--04">
+                </td>
+              </tr>
+            </thead>
+            <tbody id="ingresoTareas" class="table--body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
